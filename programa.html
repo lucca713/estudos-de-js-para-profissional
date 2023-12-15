@@ -1,13 +1,34 @@
-<meta charset="UTF-8">
+meta charset="UTF-8">
 <script>
+
+    function pulaLinha(){
+        
+        document.write("<br><br>");
+
+    }
+
+    function mostra(frase){ // ele vai recerber oque tem dentro dos parenteses do mostra "vira uma variavel"
+
+        document.write(frase);
+        pulaLinha(); //pode colcar uma funcao dentro da outra
+    }
+
+
 
     var ano = 2018;
 
-    document.write("a idade de joao é:",(ano - 1977),"<br>");
-    document.write("a idade de pedro é:",(ano - 1934),"<br>");
-    document.write("a idade de felipe é:",(ano - 1983),"<br>");
-    
-    var media = (39+20+41)/3
+    //document.write("a idade de joao é:",(ano - 1977),"<br>");
+    mostra("a idade de joao é:" + (ano - 1977) + "<br>");
 
-    document.write("a media das idade é: ", Math.round(media))
-</script>
+    
+    //document.write("a idade de felipe é:",(ano - 1983),"<br>");
+
+    mostra("a idade de felipe é:" +(ano - 1983)+ "<br>");
+
+    
+    
+
+    var media = (39+20+41)/3;
+
+    document.write("a media das idade é: ", Math.round(media));
+</script>   
