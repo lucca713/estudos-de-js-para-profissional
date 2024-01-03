@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+function pulaLinha(){
+        document.write('<br>');
+        document.write('<br>');
+    }
+
+ function mostra(frase){
+
+    document.write(frase);
+     pulaLinha();
+    }
+var multiplicador = 1;
+
+function tabuada(numerador){
+    
+    while(multiplicador <= 10){
+        var valor = numerador * multiplicador;
+        mostra(numerador + ' X ' + multiplicador + ' = ' + valor);
+        multiplicador++;
+
+    }
+}
+
+function tabuada2(numerador1){
+    for(var multiplicador_for = 1; multiplicador_for <=10; multiplicador_for++){
+        var valor1 = numerador1 * multiplicador_for;
+        mostra(numerador1 + ' X ' + multiplicador_for + ' = ' + valor1);
+
+    }
+
+
+}
+tabuada2(2);
+tabuada(7);
+ 
+</script>
