@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare com meu segredo</button>
+
+<script>
+function pulaLinha(){
+        document.write('<br>');
+        document.write('<br>');
+    }
+
+function mostra(frase){
+
+    document.write(frase);
+    pulaLinha();
+     }
+
+
+function verifica(){
+
+    if (input.value == segredo){
+
+    alert('VOCE ACERTOU');
+
+    } else{
+
+        alert('VOCE ERROU');
+
+    }
+
+    input.value = ""; //string vazia para limpar a caixa de texto
+    input.focus(); // isso faz com que toda vez que errar ele ja focar na caixa de texto aqui nao precisa clicar nela para usar 
+}
+
+var segredo = Math.round((Math.random() * 10)); //funtion math para numero aleatorio de arredondar ele
+
+var input = document.querySelector('input');
+input.focus()
+input.value;
+
+var button = document.querySelector('button'); //jeito que puxa as tags do html para mecher no JS
+
+button.onclick = verifica;
+ 
+</script>
