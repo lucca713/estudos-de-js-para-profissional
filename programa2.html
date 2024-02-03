@@ -1,0 +1,46 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+function desenhaQuadrado(x, y,cor){
+    
+        //aqui ele pega a tela e desenha um quadrado verde
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle = cor;
+
+        pincel.fillRect(x,y,50,50);
+
+        //aqui ele faz a borda dos quadrados, escolhe a cor da borda e coloca ela na borda 
+        pincel.fillstroke = 'black';
+        pincel.strokeRect(x,y,50,50);
+
+    
+}
+
+
+/* 
+com while 
+var x = 0;
+
+while( x < 600){
+desenhaQuadrado(x,0,'blue');
+desenhaQuadrado(x,50,'red');
+desenhaQuadrado(x,100,'green');
+x = 50 + x;
+
+}
+*/
+
+// com for
+
+for(var x = 0; x<600; x = x + 50 ){
+
+    desenhaQuadrado(x,0,'blue');
+    desenhaQuadrado(x,50,'red');
+    desenhaQuadrado(x,100,'green');
+
+
+}
+</script>
