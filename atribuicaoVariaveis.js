@@ -8,3 +8,4 @@ console.log(`Meu nome eh ${nome} ${sobrenome}`);
 
 nome = nome + sobrenome;
 
+console.log(nome)
