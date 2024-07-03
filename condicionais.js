@@ -10,7 +10,7 @@ const idadeComprador = 18;
 
 console.log(listaDeDestino);
 
-if( idadeComprador >= 18){
+if( idadeComprador >= 18 || estaAcompanhado == true){
     console.log('comprador eh maior de idade');
     listaDeDestino.splice(1,1);
 
