@@ -13,15 +13,16 @@ class Contacorrente{
         if(this.#saldo >= valor){
 
             this.#saldo -= valor;
+            return valor;
         }
 
     }  
 
     depositar(valor){
         if(valor > 0){
-            this.#saldo += valor;
-            
+           return;    
         }
+        this.#saldo += valor;
     }
 }
 
@@ -42,6 +43,7 @@ contacorrenteRicardo.depositar(100);
 
 
 
-contacorrenteRicardo.sacar(20);
 
+const valorsacado = contacorrenteRicardo.sacar(20);
+console.log(valorsacado);
 console.log(contacorrenteRicardo);
