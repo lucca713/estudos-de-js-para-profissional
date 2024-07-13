@@ -23,9 +23,10 @@ conta2.cliente = cliente2;
 contacorrenteRicardo.depositar(500);
 contacorrenteRicardo.transferir(200,conta2);
 
-console.log(conta2);
+console.log(conta2.cliente);
 
 
 
 
-// da undefined no retorno do programa pq a varaivael saldo esra como privado
+// da undefined no retorno do programa pq a varaivael saldo era como privado
+//undefined quando alguem esquece,  null proposiatl
