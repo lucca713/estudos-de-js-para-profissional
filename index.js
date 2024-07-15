@@ -7,16 +7,14 @@ import { Contacorrente } from "./ContaCorrente.js";
 const contacorrenteRicardo = new Contacorrente(); 
 const conta2 = new Contacorrente();
 const cliente1 = new Cliente();
-const cliente2 = new Cliente();
+const cliente2 = new Cliente("ana", 403544198545);
 
 //colocando informcao
-cliente1.nome = "Ricardo"
-cliente1.cpf = 40354419889;
+
 contacorrenteRicardo.agencia = 1001;
 contacorrenteRicardo.cliente = cliente1;
 
-cliente2.nome = "Ana"
-cliente2.cpf = 489549354;
+
 conta2.agencia = 1002;
 conta2.cliente = cliente2;
 
